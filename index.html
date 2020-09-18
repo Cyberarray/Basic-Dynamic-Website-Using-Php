@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Construction Website</title>
+  <style>
+    *{
+  padding: 0;
+  margin: 0;
+}
+.wrapper{
+  background: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80") no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.navbar{
+  height: 80px;
+  width: 100%;
+  background: rgba(0,0,0,0.4);
+}
+.navbar ul{
+  float: right;
+  margin-right: 20px;
+}
+.navbar ul li{
+  list-style: none;
+  margin: 0 8px;
+  display: inline-block;
+  line-height: 80px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white ;
+  font-size: 20px;
+  padding: 10px;
+  font-family: serif;
+  transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+  background: orange;
+  border-radius: 2px;
+}
+.wrapper .center{
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  user-select: none;
+}
+.center h1{
+   color: white;
+   font-size: 70px;
+   width: 900px;
+   text-align: center;
+}
+.center h2{
+   color: white;
+   font-size: 70px;
+   font-weight: bold;
+   width: 885px;
+   margin-top: 10px;
+   text-align: center;
+}
+.center .buttons{
+  margin: 35px 290px;
+}
+.buttons button{
+  height: 50px;
+  width: 150px;
+  font-size: 14px;
+  font-weight: bold;
+  color:white ;
+  background: orange;
+  border: 1px solid white;
+  outline: none;
+  cursor: pointer;
+  border-radius: 25px;
+}
+.buttons btn{
+  margin-left: 25px;
+}
+.buttons button:hover{
+  background: #FF8C00;
+}
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <nav class="navbar">
+      <ul class="nav-area">
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="count.php?value=1">Services</a></li>
+        <li><a href="count.php?value=2">Contact Us</a></li>
+        <li><a href="count.php?value=3">Portfolio</a></li>
+        <li><a href="count.php?value=4">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="center">
+      <h1>Welcome to our Company</h1>
+      <h2>"A Place to bring your Plans into Reality"</h2>
+      <div class="buttons">
+        <button> Explore More</button>
+        <button class="btn"> About Us </button>
+
+  </div>
+  <script type="text/javascript">
+		/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+		(function(d, m){
+		  var kommunicateSettings = {"appId":"1337effbc84bafc89ddf8d24dc6233410","popupWidget":true,"automaticChatOpenOnNavigation":true};
+		  var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+		  s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+		  var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+		  window.kommunicate = m; m._globals = kommunicateSettings;
+		})(document, window.kommunicate || {});
+	</script>
+</body>
+</html>

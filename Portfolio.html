@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Portfolio</title>
+<style >
+	*{
+		margin:0;
+		padding:0;
+		font-family:sans-serif;
+	}
+	body{
+		background-image:url("https://c.wallhere.com/photos/da/6a/city_building_Hamburg_Speicherstadt_canal_monochrome-213724.jpg!d");
+		background-size:100%; 
+		display: flex;
+		justify-content:center;
+		align-items:center;
+		height:100vh;
+
+	}
+	.container
+	{
+		width:1486.7px;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		position: relative;
+		flex-wrap: wrap;
+		padding:25px;
+
+	}
+	.container .card
+	{
+		position: relative;
+		display:flex;
+		flex-direction: column;
+		height:450px;
+		max-width:300px;
+		padding:20px 15px;
+		margin:25px 10px;
+		box-shadow: 0 5px 200px rgba(0,0,0,0.7);
+		background:rgba(0,0,0,0.7);
+	}
+	.container .card .imgbox
+	{
+		position: relative;
+		width:250px;
+		height:250px;
+		top:-50px;
+		left:25px;
+		margin-top:-1px;
+		box-shadow:0 5px 20px rgba(0,0,0,0.3);
+
+	}
+	.container .card .imgbox img
+	{
+		position: relative;
+		height: 250px;
+		max-width: 100%;
+		border-radius: 5px;
+	}
+	.container .card .cont{
+		position:relative;
+		margin-top:-140px;
+		padding:10px 15px;
+		text-align: center;
+		visibility: hidden;
+		opacity:0;
+	}
+	.container .card .content h2
+	{
+		font-size: 1.4em;
+		color: white;
+	}
+	.container .card .content p
+	{
+		font-size: 0.9em;
+		color: white;
+	}
+	.navbar{
+ 		height: 80px;
+  		width:100%;
+  		background: rgba(0,0,0,0.4);
+		margin-top: -100px;
+	}
+	.navbar ul
+	{
+		 float: right;
+  		margin-right: 20px;
+
+	}
+	.navbar ul li
+	{
+		  list-style: none;
+  			margin: 0 8px;
+ 			 display: inline-block;
+  			line-height: 80px;
+	}
+	.navbar ul li a
+	{
+		  text-decoration: none;
+  			color: white ;
+  			font-size: 20px;
+  			padding: 10px;
+  			font-family:serif;
+  			transition: .4s;
+	}
+	.navbar ul li a.active,
+	.navbar ul li a:hover
+	{
+		  background: orange;
+  		border-radius: 2px;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<nav class="navbar">
+			<ul>
+        <li><a  href="index.html">Home</a></li>
+        <li><a href="count.php?value=1">Services</a></li>
+        <li><a href="count.php?value=2">Contact Us</a></li>
+        <li><a class="active" href="#">Portfolio</a></li>
+        <li><a href="count.php?value=4">About Us</a></li>
+				
+
+			</ul>
+		</nav>
+		<div class="card">
+			<div class="imgbox">
+				<img src="https://tse4.mm.bing.net/th?id=OIP.1bxeJ3mWW7NEIC-48NSTrgHaFo&pid=Api&P=0&w=202&h=155">
+			</div>
+			<div class="content">
+				<center><h2>&emsp;FTTH&emsp;</h2></center>
+				<br>
+				<p>Fiber to the home (FTTH) is the delivery of a communications signal over optical fiber from the operator’s switching equipment all the way to a home or business, thereby replacing existing copper infrastructure such as telephone wires and coaxial cable.</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="imgbox">
+				<img src="https://tse2.mm.bing.net/th?id=OIP.wG36xOiuRvfmxEjuHqGb7wHaE8&pid=Api&P=0&w=236&h=158">
+			</div>
+			<div class="content">
+				<center><h2> House Keeping Services</h2></center>
+				<br>
+				<p>Housekeeping refers to the management of duties and chores involved in the running of a household, such as cleaning, cooking, home maintenance, shopping, and bill payment. These tasks may be performed by members of the household, or by other persons hired for the purpose.</p>
+			</div>
+		</div>	
+		<div class="card">
+			<div class="imgbox">
+				<img src="http://victorygas.com/images/gt07/LpgPipelineInstallation.jpg">
+			</div>
+			<div class="content">
+				<center><h2>LPG Pipelines by GAIL</h2></center>
+				<br>
+				<p>Gail (India) Limited (GAIL) is Government of India undertaking company. Gail is the largest state-owned natural gas processing and distribution company in India.It has the following business segments: natural gas, liquid hydrocarbon, liquefied petroleum gas transmission, petrochemical, city gas distribution, exploration and production, GAILTEL and electricity generation.</p>
+			</div>
+		</div>
+	</div>	
+	<script type="text/javascript">
+		/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+		(function(d, m){
+		  var kommunicateSettings = {"appId":"1337effbc84bafc89ddf8d24dc6233410","popupWidget":true,"automaticChatOpenOnNavigation":true};
+		  var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+		  s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+		  var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+		  window.kommunicate = m; m._globals = kommunicateSettings;
+		})(document, window.kommunicate || {});
+	</script>
+
+</body>
+</html>

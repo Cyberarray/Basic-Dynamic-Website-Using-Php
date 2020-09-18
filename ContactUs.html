@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<style >
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+  
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.contact
+{
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("http://ggscorporation.com/wp-content/uploads/2015/01/Contact1.jpg");
+  background-size: cover;
+}
+.contact .content
+{
+  max-width: 800px;
+  text-align: center;
+}
+.contact .content h2
+{
+  font-size: 36px;
+  font-weight: 500;
+  color: white;
+}
+
+.contact .content p
+{
+  font-size: 300;
+  color: white;
+}
+.container
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.container .contactInfo
+{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .contactInfo .box
+{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.container .contactInfo .box .icon
+{
+  min-width:  60px;
+  height: 60px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+.container .contactInfo .box .text
+{
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: white;
+  flex-direction: column;
+  font-weight: 300;
+}
+.container .contactInfo .box .text h3
+{
+  font-weight: 500;
+  color: #00bcd4;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px;
+  color: #333;/* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: #333;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.3);
+  padding: 20px;
+}
+.navbar{
+  height: 80px;
+  width: 200vh;
+  background: rgba(0,0,0,0.4);
+  margin-top: -50px;
+}
+.navbar ul{
+  float: right;
+  margin-right: 20px;
+}
+.navbar ul li{
+  list-style: none;
+  margin: 0 8px;
+  display: inline-block;
+  line-height: 80px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white ;
+  font-size: 20px;
+  padding: 10px;
+  font-family: serif;
+  transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+  background: orange;
+  border-radius: 2px;
+}
+</style>
+  </head>
+  <body>
+    <section class="contact">
+       <div class="wrapper">
+    <nav class="navbar">
+      <ul class="nav-area">
+        <li><a  href="index.html">Home</a></li>
+        <li><a href="count.php?value=1">Services</a></li>
+        <li><a class="active" href="#">Contact Us</a></li>
+        <li><a href="count.php?value=3">Portfolio</a></li>
+        <li><a href="count.php?value=4">About Us</a></li>
+      </ul>
+    </nav>
+  </div>
+      <div class="content">
+        <h2> Contact Us</h2>
+        <p>Don't be a stranger, just say hello!
+          Feel free to get in touch with us. We are always open to discussing new projects,
+           creative ideas and opportunities to be a part of your visions.</p>
+      </div>
+      <div class="container">
+        <div class="contactInfo">
+          <div class="box">
+            <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+            <div class="text">
+              <h3>Address</h3>
+              <p> Shankar Constructions and company, Vidyanagar, Hubli <br>580021</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>9988776655</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>Shankarandco@gmail.com</p>
+            </div>
+          </div>
+        </div>
+<div class="container">
+  <form method="post" action="contact.php">
+
+    <label for="fname"><p style="color:#00bcd4">First_Name</p></label>
+    <input type="text" id="firstname" name="firstname" placeholder="Your name..">
+
+    <label for="lname"><p style="color:#00bcd4">Last_Name</p></label>
+    <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
+
+    <label for="Ename"><p style="color:#00bcd4">Email</p></label>
+    <input type="email" style="width:390px;height:40px;" id="ename" name="ename" placeholder="Your Email..">
+
+    <label for="subject"><p style="color:#00bcd4">Subject</p></label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+
+    <input name="subm" type="submit" value="Submit">
+
+  </form>
+</div>
+<script type="text/javascript">
+  /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+  (function(d, m){
+    var kommunicateSettings = {"appId":"1337effbc84bafc89ddf8d24dc6233410","popupWidget":true,"automaticChatOpenOnNavigation":true};
+    var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+    s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+    var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+    window.kommunicate = m; m._globals = kommunicateSettings;
+  })(document, window.kommunicate || {});
+</script>
+</body>
+</html>
